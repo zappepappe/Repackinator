@@ -13,7 +13,6 @@ namespace Repackinator.Shell
             }
             var menu1Key = key.CreateSubKey($"shell\\{name}");
             menu1Key.SetValue("MUIVerb", description);
-            menu1Key.SetValue("AppliesTo", extension);
             var commandMenu1Key = menu1Key.CreateSubKey("command");
             commandMenu1Key.SetValue(null, command);
         }
