@@ -5,7 +5,7 @@ namespace Repackinator.Shell
 {
     public class ContextMenu
     {
-        private static void RegisterSubMenu(RegistryKey key, string name, string description, string command, string extension)
+        private static void RegisterSubMenu(RegistryKey key, string name, string description, string command)
         {
             if (!OperatingSystem.IsWindows())
             {
